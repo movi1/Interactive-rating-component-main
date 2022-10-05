@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Mukta&family=Overpass:wght@400;700&family=Roboto&family=Source+Sans+Pro&display=swap");
+
+/* <!-- Feel free to  customise in your own stylesheet 👍 --> */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: "overpass", sans-serif;
+  font-size: 15px;
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+button {
+  font-family: inherit;
+}
+
+.container,
+.thanks {
+  background-color: hsl(213, 19%, 18%);
+  max-width: 400px;
+  padding: 2rem 1.5rem;
+  border-radius: 0.625rem;
+}
+.container img {
+  background-color: #283747;
+  border-radius: 30px;
+  padding: 10px;
+}
+.container h1 {
+  color: white;
+  margin: 10px;
+}
+.container p {
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 25px;
+}
+.container ul {
+  display: flex;
+  justify-content: space-between;
+}
+.container ul li button {
+  height: 45px;
+  width: 45px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  border: 0;
+  background-color: #283747;
+  color: hsl(217, 12%, 63%);
+  cursor: pointer;
+  transition: 0.3sec;
+}
+.container ul li button:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+.btn-submit {
+  background-color: hsl(25, 97%, 53%);
+  width: 100%;
+  height: 15%;
+  border-radius: 20px;
+  border: 0;
+  padding-top: 6px;
+  font-size: 12px;
+  color: white;
+  letter-spacing: 0.15rem;
+}
+.btn-submit:hover{
+  background-color: #fff;
+  color:  hsl(25, 97%, 53%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
