@@ -13,7 +13,7 @@ ul {
 body {
   font-family: "overpass", sans-serif;
   font-size: 15px;
-  background-color: hsl(216, 12%, 8%);
+  background: radial-gradient( 98.96% 98.96% at 50% 0%, hsl(213, 19%, 18%) 0%, #181e27 100% );
   display: flex;
   flex-direction: column;
   margin: 1.5rem;
@@ -30,7 +30,7 @@ button {
   background-color: hsl(213, 19%, 18%);
   max-width: 400px;
   padding: 2rem 1.5rem;
-  border-radius: 0.625rem;
+  border-radius: 40px;
 }
 .container img {
   background-color: #283747;
@@ -39,17 +39,19 @@ button {
 }
 .container h1 {
   color: white;
-  margin: 10px;
+  margin-top: 20px;
+  font-size: 30px;
 }
 .container p {
   color: hsl(217, 12%, 63%);
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  
 }
 .container ul {
   display: flex;
   justify-content: space-between;
 }
-.container ul li button {
+.btn {
   height: 45px;
   width: 45px;
   border-radius: 30px;
@@ -60,6 +62,10 @@ button {
   cursor: pointer;
   transition: 0.3sec;
 }
+.active {
+  background-color: #9b9b9b;
+}
+
 .container ul li button:hover {
   background-color: hsl(25, 97%, 53%);
 }
@@ -67,21 +73,62 @@ button {
   background-color: hsl(25, 97%, 53%);
   width: 100%;
   height: 15%;
-  border-radius: 20px;
+  border-radius: 40px;
   border: 0;
   padding-top: 6px;
+  padding-bottom: 5px;
   font-size: 12px;
   color: white;
-  letter-spacing: 0.15rem;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
 }
-.btn-submit:hover{
+ .btn-submit:hover {
   background-color: #fff;
-  color:  hsl(25, 97%, 53%);
+  color: hsl(25, 97%, 53%);
+  
+}
+.thanks {
+  text-align: center;
+  color: #fff;
+}
+.thanks img {
+  margin: 0 auto 20px;
+  width: 130px;
+  height: 80px;
+}
+.thanks h2 {
+  padding-top: 2px;
+}
+.thanks p.text {
+  color: hsl(25, 97%, 53%);
+  background-color: #283747;
+  border-radius: 30px;
+  padding: 0.2rem 0.5rem 0;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+
+
+}
+p {
+  font-size: 13px;
+  color: hsl(217, 12%, 63%);
+  justify-content: center;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 10px; */
+  padding: 30px;
+}
+.hidden {
+display: none;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 13px;
   text-align: center;
+  color: #fff;
+  margin-top: 15px;
 }
 
 .attribution a {
